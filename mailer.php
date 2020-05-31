@@ -9,6 +9,6 @@ $MESSAGE_BODY .= "Email: ".$_POST["email"]."";
 $MESSAGE_BODY .= "Subject: ".$_POST["subject"]."";
 $MESSAGE_BODY .= "Question: ".nl2br($_POST["question"]).""; 
 mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure"); 
-header("Location: thankyou.html"); 
+header("Location: https://align-dental.netlify.app/thankyou.html"); 
 exit;
 ?>
