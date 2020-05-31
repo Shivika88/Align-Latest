@@ -9,6 +9,6 @@ $MESSAGE_BODY .= "Email: ".$_POST["email"]."";
 $MESSAGE_BODY .= "Subject: ".$_POST["subject"]."";
 $MESSAGE_BODY .= "Question: ".nl2br($_POST["question"]).""; 
 mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure"); 
-header("Location: http://www.propertydeals.com.ph/test/"); 
+header("Location: thankyou.html"); 
 exit;
 ?>
