@@ -8,6 +8,6 @@ $MESSAGE_BODY = "Name: ".$_POST["name"]."";
 $MESSAGE_BODY .= "Email: ".$_POST["email"].""; 
 $MESSAGE_BODY .= "Message: ".nl2br($_POST["message"]).""; 
 mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure"); 
-header("Location: http://www.propertydeals.com.ph/test/"); 
+header("Location: thankyou.html"); 
 exit;
 ?>
